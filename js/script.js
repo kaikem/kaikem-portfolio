@@ -1,16 +1,32 @@
-/*VARIABLES*/
-const text = "I am Kaike M.";
-const typingTarget = document.getElementById('typingText');
+//-------------------------------------------
+//VARIABLES
+const text = "Kaike M.";
+const typingTarget = document.getElementById("typingText");
 const typingDelay = 200;
 
-/*FUNCTION*/
-function typeText(text, target, delay){
-    for(let i=0; i<text.length; i++){
+//-------------------------------------------
+//FUNCTIONS
+/*
+function typeText(text, target, delay) {
+    for (let i = 0; i < text.length; i++) {
         setTimeout(() => {
             target.textContent += text.charAt(i);
-        }, delay*i);
-    };
-};
+        }, delay * i);
+    }
+}
+document.addEventListener("DOMContentLoaded", typeText(text, typingTarget, typingDelay));
+*/
 
-/*FUNCTION EXECUTION*/
-document.addEventListener('DOMContentLoaded', typeText(text, typingTarget, typingDelay));
+//-------------------------------------------
+//REPLACE TEXT
+const replaceableWord = document.querySelector(".replace-me");
+
+if (replaceableWord !== null) {
+    const replaceObject = new ReplaceMe(replaceableWord, {
+        animation: "animated fadeIn",
+        speed: 2000,
+        separator: ",",
+        loopCount: "infinite",
+        autoRun: true,
+    });
+}

@@ -296,16 +296,33 @@
                             <h2 class="mb-4">I'd love to hear from you!</h2>
                             <p class="lead">If you have any questions or would like to work together, please contact me using the form below.</p>
                             <form>
-                                <div class="mb-5">
-                                    <input type="text" class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white" placeholder="Name" />
+                                <div class="mb-5 form-floating">
+                                    <input
+                                        type="text"
+                                        id="formName"
+                                        class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                                        placeholder="Name"
+                                    />
+                                    <label for="formName">Name</label>
                                 </div>
 
-                                <div class="mb-5">
-                                    <input type="email" class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white" placeholder="Email" />
+                                <div class="mb-5 form-floating">
+                                    <input
+                                        type="email"
+                                        id="formEmail"
+                                        class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                                        placeholder="Email"
+                                    />
+                                    <label for="formName">Email</label>
                                 </div>
 
-                                <div class="mb-5">
-                                    <textarea class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white" placeholder="Message"></textarea>
+                                <div class="mb-5 form-floating">
+                                    <textarea
+                                        id="formMessage"
+                                        class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                                        placeholder="Message"
+                                    ></textarea>
+                                    <label for="formName">Message</label>
                                 </div>
 
                                 <div class="mb-5 d-grid">

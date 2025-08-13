@@ -1,10 +1,21 @@
 //-------------------------------------------
 //VARIABLES
 const sections = document.querySelectorAll("section");
+const backToTopBtn = document.getElementById("backToTopBtn");
 
 //-------------------------------------------
 //EVENT LISTENERS
+//sections
 window.addEventListener("scroll", checkSections);
+
+//back-to-top btn
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
+});
 
 //-------------------------------------------
 //FUNCTIONS

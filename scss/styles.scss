@@ -26,14 +26,9 @@ section.show {
     opacity: 0;
 }
 
-//service-divider
-.service-divider {
-    border: 1px solid var(--bs-info);
-}
-
 #backToTopBtn.show {
     position: fixed;
-    bottom: 120px;
+    bottom: 55px;
     right: 20px;
     background-color: var(--bs-info);
     color: var(--bs-light);
@@ -48,6 +43,11 @@ section.show {
     opacity: 0.8;
 }
 
+//service-divider
+.service-divider {
+    border: 1px solid var(--bs-info);
+}
+
 //----------------------------------------------------------------------------------------
 //HEADER
 //canvas
@@ -59,7 +59,7 @@ section.show {
 }
 
 //img
-#mainLogo {
+#heroLogo {
     width: 330px;
     height: 330px;
 }
@@ -100,7 +100,7 @@ section.show {
     width: 120px;
 }
 
-.card {
+.about .card {
     width: 30%;
     height: 142px;
     transition: transform 0.6s ease-out;
@@ -155,6 +155,8 @@ section.show {
     cursor: pointer;
     width: 180px;
     height: 180px;
+    transition: transform 0.6s ease-out;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.4);
 }
 
 //----------------------------------------------------------------------------------------
@@ -163,22 +165,28 @@ section.show {
     text-decoration: none;
 }
 
+//img
+.footer-logo {
+    width: 80px;
+    height: 80px;
+}
+
 //----------------------------------------------------------------------------------------
 //MEDIA QUERIES
 //992px
 @media (max-width: 992px) {
-    .card-title {
+    .about .card-title {
         font-size: 1rem;
     }
 
-    #mainLogo {
+    #heroLogo {
         width: 300px;
         height: 300px;
     }
 }
 
 //720px
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .header .roles {
         font-size: 1.1rem !important;
     }
@@ -187,7 +195,7 @@ section.show {
         flex-direction: column;
     }
 
-    #mainLogo {
+    #heroLogo {
         width: 270px;
         height: 270px;
     }
@@ -203,8 +211,13 @@ section.show {
 
 //400px
 @media (max-width: 400px) {
-    #mainLogo {
+    #heroLogo {
         width: 220px;
         height: 220px;
+    }
+
+    .footer-logo {
+        width: 50px;
+        height: 50px;
     }
 }

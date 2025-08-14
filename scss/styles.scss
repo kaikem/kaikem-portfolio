@@ -43,7 +43,7 @@ section.show {
     opacity: 0.8;
 }
 
-//service-divider
+//services dividers
 .service-divider {
     border: 1px solid var(--bs-info);
 }
@@ -118,7 +118,6 @@ section.show {
 
 .project:hover {
     transform: scale(1.05);
-    opacity: 0.8;
 }
 
 .project {
@@ -233,8 +232,8 @@ section.show {
 //400px
 @media (max-width: 400px) {
     #heroLogo {
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
     }
 
     .footer-logo {

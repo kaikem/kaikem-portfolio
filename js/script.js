@@ -5,7 +5,7 @@ const backToTopBtn = document.getElementById("backToTopBtn");
 
 //-------------------------------------------
 //EVENT LISTENERS
-//sections
+//sections movement
 window.addEventListener("scroll", checkSections);
 
 //back-to-top btn

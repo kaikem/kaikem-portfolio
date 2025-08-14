@@ -1,4 +1,5 @@
-//Font
+//----------------------------------------------------------------------------------------
+//FONT
 $font-family-sans-serif: "Poppins", sans-serif;
 
 $font-size-base: 1rem !default;
@@ -19,7 +20,8 @@ $font-sizes: (
     7: $h6-font-size * 0.8,
 ) !default;
 
-//Colors
+//----------------------------------------------------------------------------------------
+//COLORS
 $primary: #cc005f;
 $secondary: #990047;
 $success: #01cc81;
@@ -29,7 +31,8 @@ $danger: #ff00d5;
 $dark: #000;
 $light: #f4f4f4;
 
-//Buttons
+//----------------------------------------------------------------------------------------
+//BUTTONS
 $button-radius: 0;
 $button-padding-x: 30px;
 $button-padding-y: 12px;
@@ -46,7 +49,8 @@ $btn-padding-x-sm: $button-padding-x;
 
 $navbar-toggler-border-radius: 5px;
 
-//Spacers
+//----------------------------------------------------------------------------------------
+//SPACERS
 $spacer: 1rem !default;
 $spacers: (
     0: 0,
@@ -60,7 +64,8 @@ $spacers: (
     8: $spacer * 12,
 ) !default;
 
-//Breakpoints
+//----------------------------------------------------------------------------------------
+//BREAKPOINTS
 $container-max-widths: (
     sm: 540px,
     md: 720px,

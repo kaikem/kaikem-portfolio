@@ -53,6 +53,13 @@ section.show {
     transform: scale(0.98);
 }
 
+//details modal
+
+#detailsModal .modal-dialog {
+    max-width: 1150px;
+    margin-top: 130px;
+}
+
 //----------------------------------------------------------------------------------------
 //HEADER
 //canvas
@@ -86,7 +93,7 @@ section.show {
 //----------------------------------------------------------------------------------------
 //ABOUT ME
 .my-info-link,
-.contact-card {
+.contact-link {
     text-decoration: none;
 }
 
@@ -207,7 +214,7 @@ section.show {
 
 //720px
 @media (max-width: 767px) {
-    .header .roles {
+    .header #subHeading {
         font-size: 1.1rem !important;
     }
 

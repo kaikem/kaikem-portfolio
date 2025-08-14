@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/font-awesome.css" />
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/lightbox.min.css" />
@@ -14,20 +13,20 @@
         <title>Web Developer | Kaike M.</title>
     </head>
     <body id="home">
-        <!--CANVAS-->
+        <!--CANVAS **********************************-->
         <canvas id="animatedBg"></canvas>
 
-        <!--HEADER-->
+        <!--HEADER **********************************-->
         <header class="header vh-100 text-center position-relative">
             <div class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100">
                 <img id="heroLogo" src="./images/custom2.png" alt="Kaike M. Web Developer Logo" title="Kaike M. Web Developer" />
                 <h1 id="mainHeading" class="main-heading text-primary display-3 fw-bold text-uppercase">Web Developer</h1>
-                <!--<h1 id="typingText" class="display-1 fw-bold text-white"></h1>-->
-                <p class="roles text-white text-uppercase fs-4">
+                <p id="subHeading" class="text-white text-uppercase fs-4">
                     From Local presence to Digital success for <br /><span class="text-info fw-bold text-uppercase">Small Businesses</span> &
                     <span class="text-info fw-bold text-uppercase">Autonomous Professionals</span>
                 </p>
 
+                <!--section btns-->
                 <div class="hero-btns d-flex">
                     <a href="#contact" class="btn btn-primary mt-3 mx-2">Ask me anything</a>
                     <a href="#about" class="btn btn-outline-light mt-3 mx-2">Know me</a>
@@ -35,9 +34,10 @@
             </div>
         </header>
 
-        <!--ABOUT-->
+        <!--ABOUT **********************************-->
         <section id="about" class="about bg-light py-5">
             <div class="container">
+                <!--section title-->
                 <div class="row mb-4">
                     <div class="text-center">
                         <h1 class="section-title text-uppercase fw-bold">About me</h1>
@@ -46,51 +46,52 @@
                     </div>
                 </div>
 
+                <!--presentation-->
                 <div class="row mb-5">
                     <div class="about-content d-flex flex-column h-100">
                         <div class="d-flex gap-5 align-items-center">
                             <img src="images/kaike.png" alt="Kaike's picture" class="about-picture img-fluid rounded-circle" />
                             <p class="m-0">
-                                Hi there! I'm a Web Developer/Designer who transforms <span class="fw-bold">your ideas</span> into <span class="fw-bold">attractive designs</span> and
-                                <span class="fw-bold">useful functionalities</span>.
+                                Hi there! I'm a Web Developer/Designer who transforms
+                                <span class="fw-bold">your ideas</span> into <span class="fw-bold">attractive designs</span> and <span class="fw-bold">useful functionalities</span>.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row mb-5">
-                    <!--Profile-->
+                    <!--more info-->
                     <div class="col-md-6">
                         <h4 class="text-uppercase text-secondary fw-semibold">More Info</h4>
                         <p>Here is some info to help you know me better</p>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item mb-3">
+                            <li class="list-group-item mb-3 px-4 py-3">
                                 <h5 class="text-transform"><i class="fas fa-user text-primary"></i> Full name:</h5>
-                                <p class="fw-light">Kaike Maróstica</p>
+                                <p class="fw-light m-0">Kaike Maróstica</p>
                             </li>
-                            <li class="list-group-item mb-3">
+                            <li class="list-group-item mb-3 px-4 py-3">
                                 <h5 class="text-transform"><i class="fas fa-calendar text-primary"></i> Birth Date:</h5>
-                                <p class="fw-light">June 2nd, 1987</p>
+                                <p class="fw-light m-0">June 2nd, 1987</p>
                             </li>
-                            <li class="list-group-item mb-3">
+                            <li class="list-group-item mb-3 px-4 py-3">
                                 <h5 class="text-transform"><i class="fa-brands fa-square-instagram text-primary"></i> Instagram:</h5>
-                                <p class="fw-light"><a class="my-info-link fw-semibold" href="https://www.instagram.com/kaikemarostica">Click me</a></p>
+                                <p class="fw-light m-0"><a href="https://www.instagram.com/kaikemarostica" target="_blank" class="my-info-link fw-semibold">Click me</a></p>
                             </li>
-                            <li class="list-group-item mb-3">
+                            <li class="list-group-item mb-3 px-4 py-3">
                                 <h5 class="text-transform"><i class="fa-brands fa-github text-primary"></i> GitHub:</h5>
-                                <p class="fw-light"><a class="my-info-link fw-semibold" href="https://github.com/kaikem">Click me</a></p>
+                                <p class="fw-light m-0"><a href="https://github.com/kaikem" target="_blank" class="my-info-link fw-semibold">Click me</a></p>
                             </li>
-                            <li class="list-group-item mb-3">
+                            <li class="list-group-item px-4 py-3">
                                 <h5 class="text-transform"><i class="fa-brands fa-linkedin text-primary"></i> Linkedin:</h5>
-                                <p class="fw-light"><a class="my-info-link fw-semibold" href="https://www.linkedin.com/in/kaike-augusto-marostica-9679b964/">Click me</a></p>
+                                <p class="fw-light m-0"><a href="https://www.linkedin.com/in/kaike-augusto-marostica-9679b964/" target="_blank" class="my-info-link fw-semibold">Click me</a></p>
                             </li>
                         </ul>
                     </div>
 
-                    <!--Skills-->
+                    <!--skills & experience-->
                     <div class="col-md-6">
                         <h4 class="text-uppercase text-secondary fw-semibold">Skills & Experience</h4>
-                        <p>I've been working as a Web Developer for 3+ years and these are some of my skills</p>
+                        <p>I've been working as a Web Developer for 1+ years and these are some of my skills</p>
                         <div class="skill-cards-cont d-flex flex-wrap justify-content-around">
                             <div class="card d-flex bg-white align-items-center p-2 mb-3">
                                 <div class="card-img d-flex justify-content-center align-items-center h-75">
@@ -176,6 +177,7 @@
                     </div>
                 </div>
 
+                <!--section btns-->
                 <div class="row text-center">
                     <div class="col-12">
                         <a href="#portfolio" class="btn btn-info btn-lg mx-2 mb-3">Check my Portfolio</a>
@@ -185,9 +187,10 @@
             </div>
         </section>
 
-        <!--PORTFOLIO-->
+        <!--PORTFOLIO **********************************-->
         <section id="portfolio" class="portfolio text-bg-dark bg-gradient py-5">
             <div class="container">
+                <!--section title-->
                 <div class="row mb-4">
                     <div class="text-center">
                         <h1 class="section-title text-uppercase fw-bold">Portfolio</h1>
@@ -197,6 +200,7 @@
                 </div>
 
                 <div class="row mb-5">
+                    <!--project 1-->
                     <div class="col-md-6 mb-4">
                         <div class="project shadow-lg rounded-5">
                             <a href="images/project1.jpg" data-lightbox="projects" data-title="Clipboard Landing Page">
@@ -205,6 +209,7 @@
                         </div>
                     </div>
 
+                    <!--project 2-->
                     <div class="col-md-6 mb-4">
                         <div class="project shadow-lg rounded-5">
                             <a href="images/project2.jpg" data-lightbox="projects" data-title="Loop Studios Website">
@@ -213,6 +218,7 @@
                         </div>
                     </div>
 
+                    <!--project 3-->
                     <div class="col-md-6 mb-4">
                         <div class="project shadow-lg rounded-5">
                             <a href="images/project3.jpg" data-lightbox="projects" data-title="Shortly Website">
@@ -221,6 +227,7 @@
                         </div>
                     </div>
 
+                    <!--project 4-->
                     <div class="col-md-6 mb-4">
                         <div class="project shadow-lg rounded-5">
                             <a href="images/project4.jpg" data-lightbox="projects" data-title="Fylo Website">
@@ -230,6 +237,7 @@
                     </div>
                 </div>
 
+                <!--section btns-->
                 <div class="row text-center">
                     <div class="col-12">
                         <a href="#services" class="btn btn-primary btn-lg">What I can do for you</a>
@@ -238,9 +246,10 @@
             </div>
         </section>
 
-        <!--SERVICES-->
+        <!--SERVICES **********************************-->
         <section id="services" class="services text-bg-dark py-5 position-relative">
             <div class="container position-relative">
+                <!--section title-->
                 <div class="row mb-4">
                     <div class="text-center">
                         <h1 class="section-title text-uppercase fw-bold">Services</h1>
@@ -250,6 +259,7 @@
                 </div>
 
                 <div class="row mb-5">
+                    <!--service 1-->
                     <div class="service col-md-3 text-center">
                         <i class="fas fa-pen-nib fa-3x text-info mb-3"></i>
                         <h3 class="fs-3">Design</h3>
@@ -258,6 +268,7 @@
                         <hr class="service-divider w-75 mx-auto d-block d-md-none" />
                     </div>
 
+                    <!--service 2-->
                     <div class="service col-md-3 text-center">
                         <i class="fas fa-code fa-3x text-info mb-3"></i>
                         <h3 class="fs-3">Development</h3>
@@ -266,6 +277,7 @@
                         <hr class="service-divider w-75 mx-auto d-block d-md-none" />
                     </div>
 
+                    <!--service 3-->
                     <div class="service col-md-3 text-center">
                         <i class="fas fa-computer-mouse fa-3x text-info mb-3"></i>
                         <h3 class="fs-3">UI/UX</h3>
@@ -274,6 +286,7 @@
                         <hr class="service-divider w-75 mx-auto d-block d-md-none" />
                     </div>
 
+                    <!--service 4-->
                     <div class="service col-md-3 text-center">
                         <i class="fas fa-eye fa-3x text-info mb-3"></i>
                         <h3 class="fs-3">SEO & CWV</h3>
@@ -282,19 +295,20 @@
                     </div>
                 </div>
 
+                <!--section btns-->
                 <div class="row text-center">
                     <div class="col-12">
-                        <a class="btn btn-primary btn-lg mx-2 mb-3">See more details</a>
+                        <a class="btn btn-primary btn-lg mx-2 mb-3" data-bs-toggle="modal" data-bs-target="#detailsModal">See more details</a>
                         <a href="#contact" class="btn btn-outline-light btn-lg mx-2 mb-3">Message me now</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--CONTACT & FOOTER-->
+        <!--CONTACT **********************************-->
         <section id="contact" class="contact text-bg-warning bg-gradient py-5">
             <div class="container">
-                <!--Contact-->
+                <!--section title-->
                 <div class="row mb-4">
                     <div class="text-center">
                         <h1 class="section-title text-uppercase fw-bold">Contact</h1>
@@ -304,13 +318,19 @@
                 </div>
 
                 <div class="row mb-5">
+                    <!--form-->
                     <div class="col-md-8">
                         <div class="text-center">
                             <h4 class="text-uppercase text-secondary fw-semibold">Message me using the form below</h4>
-                            <!--<p class="lead">Send me a message using the form below</p>-->
                             <form>
                                 <div class="mb-3 form-floating">
-                                    <input type="text" id="formName" class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-dark text-dark" placeholder="Name" />
+                                    <input
+                                        type="text"
+                                        id="formName"
+                                        class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-dark text-dark"
+                                        placeholder="Name"
+                                        required
+                                    />
                                     <label for="formName">Name</label>
                                 </div>
 
@@ -351,13 +371,14 @@
                         </div>
                     </div>
 
+                    <!--contact btns-->
                     <div id="contactActionsCol" class="col-md-4 d-flex flex-column align-items-center">
                         <h4 class="text-uppercase text-secondary fw-semibold">Or use these options</h4>
-                        <!--<p class="lead">Or use any of these options</p>-->
                         <div class="contact-actions d-flex flex-column gap-4">
+                            <!--whatsapp-->
                             <div class="contact-whats">
                                 <div class="card text-center">
-                                    <a href="https://w.app/ngsro1" target="_blank" class="contact-card">
+                                    <a href="https://w.app/ngsro1" target="_blank" class="contact-link">
                                         <div class="card-body d-flex flex-column justify-content-center p-3">
                                             <p class="card-title fs-4 fw-semibold text-dark m-0">WhatsApp</p>
                                             <i class="fa-brands fa-whatsapp fa-4x text-success p-2"></i>
@@ -366,13 +387,17 @@
                                     </a>
                                 </div>
                             </div>
+
+                            <!--email-->
                             <div class="contact-email">
                                 <div class="card text-center">
-                                    <div class="card-body d-flex flex-column justify-content-center p-3">
-                                        <p class="card-title fs-4 fw-semibold text-dark m-0">Gmail</p>
-                                        <i class="far fa-envelope fa-4x text-secondary p-2"></i>
-                                        <p class="card-text text-dark">Send email</p>
-                                    </div>
+                                    <a href="mailto:kaike.marostica@gmail.com" target="_blank" class="contact-link">
+                                        <div class="card-body d-flex flex-column justify-content-center p-3">
+                                            <p class="card-title fs-4 fw-semibold text-dark m-0">Gmail</p>
+                                            <i class="far fa-envelope fa-4x text-secondary p-2"></i>
+                                            <p class="card-text text-dark">Send email</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -381,21 +406,26 @@
             </div>
         </section>
 
-        <!--FOOTER-->
-        <div class="footer bg-dark p-4">
+        <!--FOOTER **********************************-->
+        <div id="footer" class="footer bg-dark p-4">
             <div class="container">
                 <div class="row">
                     <div class="d-flex justify-content-between">
+                        <!--logo & copyright-->
                         <div class="d-none d-md-flex flex-column justify-content-between">
                             <a href="#home"><img class="footer-logo" src="./images/custom2.png" alt="Kaike M. Web Developer Logo" title="Kaike M. Web Developer" /></a>
                             <p class="fs-7 text-muted m-0">&copy; 2025 Kaike M. All rights reserved</p>
                         </div>
+
+                        <!--page links-->
                         <div class="d-flex flex-column">
                             <a href="#home" class="fs-7 text-muted m-0"><h6 class="fw-semibold">Home</h6></a>
                             <a href="#about" class="fs-7 text-muted m-0"><h6 class="fw-semibold">About me</h6></a>
                             <a href="#portfolio" class="fs-7 text-muted m-0"><h6 class="fw-semibold">Portfolio</h6></a>
                             <a href="#services" class="fs-7 text-muted m-0"><h6 class="fw-semibold">Services</h6></a>
                         </div>
+
+                        <!--contact & socials-->
                         <div class="d-flex flex-column">
                             <a href="#contact"><h6 class="fw-semibold">Contact</h6></a>
                             <p class="fs-7 text-muted mb-2"><i class="fa-solid fa-phone fs-7 text-muted"></i> +55 (19)98149-5187</p>
@@ -408,6 +438,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--for smaller screens-->
                 <hr class="d-block d-md-none mx-auto w-75" />
                 <div class="d-flex d-md-none justify-content-between align-items-center">
                     <a href="#home"><img class="footer-logo" src="./images/custom2.png" alt="Kaike M. Web Developer Logo" title="Kaike M. Web Developer" /></a>
@@ -415,12 +447,92 @@
                 </div>
             </div>
         </div>
-        <!--BACK-TO-TOP BTN-->
+
+        <!--OTHER ELEMENTS **********************************-->
+        <!--back-to-top btn-->
         <button id="backToTopBtn" class="back-to-top-btn" onclick="window.location.href='#home'">
             <i class="fa-solid fa-angle-up fa-2x"></i>
         </button>
 
-        <script src="js/replaceme.min.js"></script>
+        <!--details modal-->
+        <div id="detailsModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content bg-light p-4">
+                    <!--details list-->
+                    <div class="row">
+                        <div class="modal-cont d-flex gap-3">
+                            <div class="col-6">
+                                <img src="./images/modal_img.jpg" class="img-fluid" alt="Screens with design work" />
+                            </div>
+                            <div class="col-6">
+                                <h3 class="text-uppercase text-primary fw-semibold">What can we do together?</h3>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <i class="fa-solid fa-globe text-secondary fs-4"></i>
+                                        <span class="text-secondary fw-semibold fs-4">Your website</span>
+                                        <p class="m-0"><i class="fa-solid fa-circle-check text-secondary"></i> Your business's digital presence on the web.</p>
+                                        <p class="m-0"><i class="fa-solid fa-circle-check text-secondary"></i> Showcase your products and services.</p>
+                                        <p class="m-0"><i class="fa-solid fa-bullseye text-secondary"></i></i> Engage visitors and convert them into new customers.</p>
+                                        <p class="text-info m-0"><i class="fa-solid fa-computer"></i></i> Designs built to meet your specific needs.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--modal btns-->
+                    <div class="row mt-3">
+                        <div class="modal-btns-cont d-flex justify-content-end">
+                            <button class="btn btn-outline-dark mx-2" data-bs-dismiss="modal">Close</button>
+                            <button class="btn btn-primary ms-2" onclick="window.location.href='#contact'" data-bs-dismiss="modal">Let's begin!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--details modal 2
+        <div id="detailsModal2" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content bg-light p-4">
+                    <div class="row">
+                        <div class="modal-cont d-flex gap-3">
+                            <div class="col-6">
+                                <img src="./images/modal_img.jpg" class="img-fluid" alt="Screens with design work" />
+                            </div>
+                            <div class="col-6">
+                                <h4 class="text-uppercase text-secondary fw-semibold">What we can create together:</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <i class="fa-solid fa-globe text-primary fs-4"></i>
+                                        <span class="text-primary fw-semibold fs-4">Primary Site</span>
+                                        <p class="m-0"><i class="fa-solid fa-circle-check text-primary"></i> Your business's main source of information.</p>
+                                        <p class="m-0"><i class="fa-solid fa-circle-check text-primary"></i> Showcase your products and services.</p>
+                                        <p class="m-0"><i class="fa-solid fa-bullseye text-primary"></i></i> Engage visitors and convert them into customers.</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa-solid fa-house text-primary fs-4"></i>
+                                        <span class="text-primary fw-semibold fs-4">Microsite</span>
+                                        <p class="m-0"><i class="fa-solid fa-circle-check text-primary"></i> Focused on certain products/services.</p>
+                                        <p class="m-0"><i class="fa-solid fa-circle-check text-primary"></i> Less information, more practicality.</p>
+                                        <p class="m-0"><i class="fa-solid fa-bullseye text-primary"></i></i> Funnel visitors more strongly to specific goals.</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa-solid fa-map-pin text-primary fs-4"></i>
+                                        <span class="text-primary fw-semibold fs-4">Landing Page</span>
+                                        <p class="m-0"><i class="fa-solid fa-circle-check text-primary"></i> Focused on only one specific goal</p>
+                                        <p class="m-0"><i class="fa-solid fa-circle-check text-primary"></i> High-converting website.</p>
+                                        <p class="m-0"><i class="fa-solid fa-bullseye text-primary"></i></i> Capture leads or highlight your offer with clarity and impact.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/lightbox-plus-jquery.min.js"></script>
         <script src="./js/animated-bg.js"></script>

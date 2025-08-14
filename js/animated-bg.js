@@ -18,7 +18,7 @@ window.addEventListener("mousemove", (event) => {
 window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    init();
+    //init();
 });
 
 let dotcolor = "white";

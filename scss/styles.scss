@@ -92,8 +92,7 @@ section.show {
 
 //----------------------------------------------------------------------------------------
 //ABOUT ME
-.my-info-link,
-.contact-link {
+.my-info-link {
     text-decoration: none;
 }
 
@@ -122,13 +121,12 @@ section.show {
 
 //----------------------------------------------------------------------------------------
 //PORTFOLIO
+.project {
+    transition: all 0.5s ease-in-out;
+}
 
 .project:hover {
     transform: scale(1.05);
-}
-
-.project {
-    transition: all 0.5s ease-in-out;
 }
 
 //----------------------------------------------------------------------------------------
@@ -154,24 +152,6 @@ section.show {
 
 //----------------------------------------------------------------------------------------
 //CONTACT
-.contact-actions .card {
-    cursor: pointer;
-    width: 180px;
-    height: 180px;
-    background-color: #f3fb1c;
-    border: none;
-    box-shadow: 5px 5px 9px #cfd602, -5px -5px 9px #ffff02;
-    transition: background-color 0.3s ease-out;
-}
-
-.contact-actions .card:hover {
-    background-color: #f2fb00;
-}
-
-.contact-actions .card:active {
-    transform: scale(0.98);
-    box-shadow: inset 5px 5px 9px #cfd602, inset -5px -5px 9px #ffff02;
-}
 
 //----------------------------------------------------------------------------------------
 //FOOTER
@@ -211,10 +191,6 @@ section.show {
 
 //720px
 @media (max-width: 767px) {
-    .header #subHeading {
-        font-size: 1.1rem !important;
-    }
-
     .about-content {
         flex-direction: column;
     }
@@ -222,14 +198,6 @@ section.show {
     #heroLogo {
         width: 270px;
         height: 270px;
-    }
-
-    #contactActionsCol {
-        justify-content: center !important;
-    }
-
-    .contact-actions {
-        flex-direction: row !important;
     }
 
     .modal-cont {
@@ -264,7 +232,7 @@ section.show {
 }
 
 @media (max-width: 321px) {
-    .card-title {
+    .skill-cards-cont .card-title {
         font-size: 0.9rem !important;
     }
 }

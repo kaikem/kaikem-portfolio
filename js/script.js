@@ -15,6 +15,8 @@ window.addEventListener("scroll", () => {
     } else {
         backToTopBtn.classList.remove("show");
     }
+
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) backToTopBtn.classList.remove("show");
 });
 
 //-------------------------------------------

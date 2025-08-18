@@ -1,13 +1,38 @@
-//Font
-$font-family-sans-serif: 'Poppins', sans-serif;
+//----------------------------------------------------------------------------------------
+//FONT
+$font-family-sans-serif: "Poppins", sans-serif;
 
-//Colors
+$font-size-base: 1rem !default;
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$font-sizes: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+    7: $h6-font-size * 0.8,
+) !default;
+
+//----------------------------------------------------------------------------------------
+//COLORS
 $primary: #cc005f;
 $secondary: #990047;
+$success: #01cc81;
+$info: #345cfc;
+$warning: #f6ff02;
+$danger: #ff00d5;
 $dark: #000;
 $light: #f4f4f4;
 
-//Buttons
+//----------------------------------------------------------------------------------------
+//BUTTONS
 $button-radius: 0;
 $button-padding-x: 30px;
 $button-padding-y: 12px;
@@ -24,28 +49,29 @@ $btn-padding-x-sm: $button-padding-x;
 
 $navbar-toggler-border-radius: 5px;
 
-//Spacers
+//----------------------------------------------------------------------------------------
+//SPACERS
 $spacer: 1rem !default;
-$spacers:(
-0: 0,
-1: $spacer * 0.25,
-2: $spacer * 0.5,
-3: $spacer,
-4: $spacer * 1.5,
-5: $spacer * 3,
-6: $spacer * 6,
-7: $spacer * 8,
-8: $spacer * 12,
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 6,
+    7: $spacer * 8,
+    8: $spacer * 12,
 ) !default;
 
-//Breakpoints
+//----------------------------------------------------------------------------------------
+//BREAKPOINTS
 $container-max-widths: (
-sm: 540px,
-md: 720px,
-lg: 960px,
-xl: 980px,
-xxl: 1000px,
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 980px,
+    xxl: 1000px,
 ) !default;
 
-
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/bootstrap";

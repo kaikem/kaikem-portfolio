@@ -60,6 +60,10 @@ section.show {
     width: 80%;
 }
 
+#detailsModal .modal-card {
+    width: 90%;
+}
+
 //----------------------------------------------------------------------------------------
 //HEADER
 //canvas
@@ -216,6 +220,10 @@ section.show {
     #detailsModal .modal-dialog {
         margin-top: 30px;
     }
+
+    #detailsModal .modal-card {
+        width: 100%;
+    }
 }
 
 //400px
@@ -231,6 +239,7 @@ section.show {
     }
 }
 
+//321px
 @media (max-width: 321px) {
     .skill-cards-cont .card-title {
         font-size: 0.9rem !important;

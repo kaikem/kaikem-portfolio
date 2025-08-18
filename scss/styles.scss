@@ -28,7 +28,7 @@ section.show {
 
 #backToTopBtn.show {
     position: fixed;
-    bottom: 55px;
+    bottom: 40px;
     right: 20px;
     background-color: var(--bs-info);
     color: var(--bs-light);
@@ -54,10 +54,14 @@ section.show {
 }
 
 //details modal
-
 #detailsModal .modal-dialog {
     max-width: 1150px;
     margin-top: 130px;
+    width: 95%;
+}
+
+#detailsModal img {
+    width: 80%;
 }
 
 //----------------------------------------------------------------------------------------
@@ -136,7 +140,6 @@ section.show {
 .services {
     background: url(../images/services2_bg.jpg) center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .services::after {
@@ -181,15 +184,13 @@ section.show {
     transition: color 0.3s;
 }
 
-.footer h6,
-.footer i {
+.footer .footer-link {
     color: #f4f4f4;
     transition: color 0.3s;
 }
 
-.footer h6:hover,
-.footer i:hover {
-    color: #6c757d;
+.footer .footer-link:hover {
+    color: var(--bs-primary);
 }
 
 //img
@@ -234,6 +235,19 @@ section.show {
     .contact-actions {
         flex-direction: row !important;
     }
+
+    .modal-cont {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modal-btns-cont {
+        justify-content: center !important;
+    }
+
+    #detailsModal img {
+        width: 40%;
+    }
 }
 
 //400px
@@ -246,5 +260,11 @@ section.show {
     .footer-logo {
         width: 50px;
         height: 50px;
+    }
+}
+
+@media (max-width: 321px) {
+    .card-title {
+        font-size: 0.9rem !important;
     }
 }

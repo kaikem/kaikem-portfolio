@@ -1,0 +1,229 @@
+.section-title {
+  color: var(--bs-primary);
+}
+
+.section-subtitle {
+  font-size: 1.9rem;
+}
+
+section {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+section.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#backToTopBtn {
+  opacity: 0;
+}
+
+#backToTopBtn.show {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background-color: var(--bs-info);
+  color: var(--bs-light);
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: opacity 0.6s ease;
+}
+
+#backToTopBtn:hover {
+  opacity: 0.8;
+}
+
+.service-divider {
+  border: 1px solid var(--bs-info);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+#detailsModal .modal-dialog {
+  max-width: 1150px;
+  margin-top: 130px;
+  width: 95%;
+}
+
+#detailsModal img {
+  width: 80%;
+}
+
+#animatedBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#heroLogo {
+  width: 330px;
+  height: 330px;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.header .text-container {
+  z-index: 10;
+}
+
+.my-info-link,
+.contact-link {
+  text-decoration: none;
+}
+
+.my-info-link:hover {
+  text-decoration: underline;
+}
+
+.about-picture {
+  width: 120px;
+}
+
+.about .card {
+  width: 30%;
+  height: 142px;
+  transition: transform 0.6s ease-out;
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.4);
+}
+
+.about .card:hover {
+  transform: scale(1.1);
+}
+
+.about .skill-card-img {
+  width: 90%;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project {
+  transition: all 0.5s ease-in-out;
+}
+
+.services {
+  background: url(../images/services2_bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.services .container {
+  z-index: 10;
+}
+
+.contact-actions .card {
+  cursor: pointer;
+  width: 180px;
+  height: 180px;
+  background-color: #f3fb1c;
+  border: none;
+  box-shadow: 5px 5px 9px #cfd602, -5px -5px 9px #ffff02;
+  transition: background-color 0.3s ease-out;
+}
+
+.contact-actions .card:hover {
+  background-color: #f2fb00;
+}
+
+.contact-actions .card:active {
+  transform: scale(0.98);
+  box-shadow: inset 5px 5px 9px #cfd602, inset -5px -5px 9px #ffff02;
+}
+
+.footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .footer-link {
+  color: #f4f4f4;
+  transition: color 0.3s;
+}
+
+.footer .footer-link:hover {
+  color: var(--bs-primary);
+}
+
+.footer-logo {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 992px) {
+  .about .card-title {
+    font-size: 1rem;
+  }
+  #heroLogo {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .header #subHeading {
+    font-size: 1.1rem !important;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  #heroLogo {
+    width: 270px;
+    height: 270px;
+  }
+  #contactActionsCol {
+    justify-content: center !important;
+  }
+  .contact-actions {
+    flex-direction: row !important;
+  }
+  .modal-cont {
+    flex-direction: column;
+    text-align: center;
+  }
+  .modal-btns-cont {
+    justify-content: center !important;
+  }
+  #detailsModal img {
+    width: 40%;
+  }
+}
+@media (max-width: 400px) {
+  #heroLogo {
+    width: 200px;
+    height: 200px;
+  }
+  .footer-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 321px) {
+  .card-title {
+    font-size: 0.9rem !important;
+  }
+}

@@ -2,10 +2,6 @@
   color: var(--bs-primary);
 }
 
-.section-subtitle {
-  font-size: 1.9rem;
-}
-
 section {
   transform: translateX(-100%);
   opacity: 0;

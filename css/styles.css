@@ -207,6 +207,9 @@ section.show {
   #detailsModal img {
     width: 40%;
   }
+  #detailsModal .modal-dialog {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 400px) {
   #heroLogo {

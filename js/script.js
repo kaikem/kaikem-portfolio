@@ -1,32 +1,38 @@
 //-------------------------------------------
 //VARIABLES
-const text = "Kaike M.";
-const typingTarget = document.getElementById("typingText");
-const typingDelay = 200;
+const sections = document.querySelectorAll("section");
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+//-------------------------------------------
+//EVENT LISTENERS
+//sections movement
+window.addEventListener("scroll", checkSections);
+
+//back-to-top btn
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
+
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) backToTopBtn.classList.remove("show");
+});
 
 //-------------------------------------------
 //FUNCTIONS
-/*
-function typeText(text, target, delay) {
-    for (let i = 0; i < text.length; i++) {
-        setTimeout(() => {
-            target.textContent += text.charAt(i);
-        }, delay * i);
-    }
-}
-document.addEventListener("DOMContentLoaded", typeText(text, typingTarget, typingDelay));
-*/
+checkSections();
 
-//-------------------------------------------
-//REPLACE TEXT
-const replaceableWord = document.querySelector(".replace-me");
+function checkSections() {
+    const triggerBottom = (window.innerHeight / 4) * 4;
 
-if (replaceableWord !== null) {
-    const replaceObject = new ReplaceMe(replaceableWord, {
-        animation: "animated fadeIn",
-        speed: 2000,
-        separator: ",",
-        loopCount: "infinite",
-        autoRun: true,
+    sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if (sectionTop < triggerBottom) {
+            section.classList.add("show");
+        } else {
+            section.classList.remove("show");
+        }
     });
 }

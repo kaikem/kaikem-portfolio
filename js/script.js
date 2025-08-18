@@ -16,7 +16,9 @@ window.addEventListener("scroll", () => {
         backToTopBtn.classList.remove("show");
     }
 
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) backToTopBtn.classList.remove("show");
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = window.scrollY;
+    if (Math.ceil(scrolled) >= scrollable) backToTopBtn.classList.remove("show");
 });
 
 //-------------------------------------------
